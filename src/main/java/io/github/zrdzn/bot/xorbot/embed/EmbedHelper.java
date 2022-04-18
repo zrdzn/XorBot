@@ -27,6 +27,7 @@ public class EmbedHelper {
 
     public static final MessageEmbed NO_PERMISSIONS_EMBED = error().setDescription("No permissions.").build();
     public static final MessageEmbed NO_MENTIONED_USER = error().setDescription("You need to mention someone that is on this server.").build();
+    public static final MessageEmbed COULD_NOT_PUNISH = error().setDescription("Something went wrong while punishing this user.").build();
 
     public static EmbedBuilder info(User executor) {
         return getEmbed(executor, EmbedType.INFORMATION);
